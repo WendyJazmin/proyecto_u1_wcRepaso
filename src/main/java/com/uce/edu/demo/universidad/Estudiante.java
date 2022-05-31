@@ -1,21 +1,26 @@
-package com.uce.edu.demo.consultorio;
+package com.uce.edu.demo.universidad;
 
 import org.springframework.stereotype.Component;
 
-//se coloca una metadata:dato adicional, atraves de anotaciones
-
 @Component
+public class Estudiante {
 
-public class Paciente {
 	private String nombre;
+	private int cedula;
 	private int edad;
-
-	//get y set
+	
+	//set y get
 	public String getNombre() {
 		return nombre;
 	}
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+	public int getCedula() {
+		return cedula;
+	}
+	public void setCedula(int cedula) {
+		this.cedula = cedula;
 	}
 	public int getEdad() {
 		return edad;
@@ -25,5 +30,4 @@ public class Paciente {
 	}
 	
 	
-
 }

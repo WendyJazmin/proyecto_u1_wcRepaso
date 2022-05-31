@@ -1,4 +1,4 @@
-package com.uce.edu.demo;
+package com.uce.edu.demo.universidad;
 
 import java.time.LocalDateTime;
 
@@ -16,27 +16,7 @@ import com.uce.edu.demo.universidad.Matricula3;
 
 @SpringBootApplication
 public class ProyectoU1WcRepasoApplication implements CommandLineRunner{
-	
-	//1) DI por atributo
-		@Autowired
-		private CitaMedica cita;
-		
-		//@Autowired
-		//private CitaMedica3 cita2;
-	
-/*
-	//1)(DI) por atributo, inyeccion de dependencia por atributos
-	@Autowired
-	private CitaMedica cita;*/
-	
-	//2) Inyeccion por constructor
-	@Autowired
-	private CitaMedica3 cita3;
-	
-	//3) Inyeccion por metodos set y get
-	@Autowired
-	private CitaMedica2 cita2;
-	
+
 	
 	//MATRICULA
 	//1)(DI) por atributo, inyeccion de dependencia por atributos
@@ -58,21 +38,9 @@ public class ProyectoU1WcRepasoApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		// TODO Auto-generated method stub
-		System.out.println("Mi primer proyeto con spring framework");
-		
-		
-		String respuesta = cita.agendar(LocalDateTime.now(), "Javier", "Teran", 32, "Quito", "Pepito", 19);
-		System.out.println(respuesta);
-		
-		String respuesta3 = cita3.agendar(LocalDateTime.now(), "Javier", "Teran", 32, "Quito", "Pepito", 19);
-		System.out.println(respuesta3);
-		
-		String respuesta2 = cita2.agendar(LocalDateTime.now(), "Javier", "Teran", 32, "Quito", "Pepito", 19);
-		System.out.println(respuesta2);
 		
 		//MATRICULA
-		System.out.println();
+		//System.out.println();
 		
 		String respuesta4 = matricula1.matricular(LocalDateTime.now(), "Marco", 14245657, 20, "Economia", 50);
 		System.out.println(respuesta4);
