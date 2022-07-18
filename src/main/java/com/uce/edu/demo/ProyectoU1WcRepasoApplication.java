@@ -61,7 +61,7 @@ public class ProyectoU1WcRepasoApplication implements CommandLineRunner{
 		// TODO Auto-generated method stub
 		System.out.println("Mi primer proyeto con spring framework");
 		
-		
+		/*
 		String respuesta = cita.agendar(LocalDateTime.now(), "Javier", "Teran", 32, "Quito", "Pepito", 19);
 		System.out.println(respuesta);
 		
@@ -82,6 +82,7 @@ public class ProyectoU1WcRepasoApplication implements CommandLineRunner{
 		
 		String respuesta6 = matricula3.matricular(LocalDateTime.now(), "Daniel", 13238857, 22, "Ecuaciones Diferenciales", 44);
 		System.out.println(respuesta6);
+		*/
 	}
 
 }
